@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 80px 0;
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: 120%;
+    background-position-x: -30px;
+}
+
+.main_cv {
+    width: 95%;
+    max-width: 900px;
+    padding: 0 20px;
+    margin: auto;
+    border: 0 transparent solid;
+    border-radius: 20px 20px;
+    position: relative;
+    z-index: -5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.picture_cv {
+    width: 200px;
+    display: inline-block;
+}
+
+
+.image_span {
+    position: absolute;
+    background-color: rgb(192, 93, 93);
+    position: absolute;
+    z-index: -1;
+    width: 100px;
+    height: 200px;
+    border-radius: 50px;
+    transform: rotate(45deg);
+    left: 50px;
+}
+
+.image_span::before {
+    content: " ";
+    width: 80px;
+    height: 80px;
+    background-color: rgb(81, 83, 201);
+    position: absolute;
+    border-radius: 50%;
+    left: 80px;
+    opacity: 80%;
+}
+
+figure {
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.header_nav {
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-style: none;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.cv_link:hover {
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    text-decoration: none;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-style: none;
+}
+
+.text-muted {
+    border-left: 2px solid grey;
+    padding-left: 5px;
+}
+
+.about_me {
+    display: flex;
+}
+
+.work_experience {
+    border-left: 2px solid rgb(187, 187, 187);
+    padding-left: 3%;
+    margin-left: 7%;
+}
+
+.work_experience article {
+    padding-left: 20px;
+}
+
+.work_experience h4::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(109, 109, 109);
+    border-radius: 50%;
+    border: 3px solid rgb(184, 184, 184);
+    outline: solid 2px rgb(114, 114, 114);
+    position: absolute;
+    left: 6.8%;
+}
